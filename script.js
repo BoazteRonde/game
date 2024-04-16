@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const ball = document.getElementById('ball');
     const goal = document.getElementById('goal');
+    const obstacle = document.getElementById('obstacle');
     const gameContainer = document.getElementById('game-container');
 
     // Beweging van de bal
@@ -27,6 +28,9 @@ const ballStyle = getComputedStyle(ball);
 // Controleer winvoorwaarde
         if (checkCollision(ball, goal)) {
             alert('Gefeliciteerd! Je hebt gewonnen!');
+        }
+         if (checkCollision(ball, obstacle)) {
+            alert('helaas je bent dood!');
         }
     });
 
