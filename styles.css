@@ -21,7 +21,7 @@ body, html {
     transform: translate(-50%, -50%);
 }
 #goal {
-    width: 50px;
+    width: 90px;
     height: 50px;
     background-color: green;
     position: absolute;
