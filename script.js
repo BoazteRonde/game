@@ -47,27 +47,27 @@ const ballStyle = getComputedStyle(ball);
     function checkCollision(ball, obstacle1) {
         const ballRect = ball.getBoundingClientRect();
         const goalRect = goal.getBoundingClientRect();
-        return !(ballRect.right < obstacleRect.left || 
-                 ballRect.left > obstacleRect.right || 
-                 ballRect.bottom < obstacleRect.top || 
-                 ballRect.top > obstacleRect.bottom);
+        return !(ballRect.right < obstacle1Rect.left || 
+                 ballRect.left > obstacle1Rect.right || 
+                 ballRect.bottom < obstacle1Rect.top || 
+                 ballRect.top > obstacle1Rect.bottom);
     }
 });
     function checkCollision(ball, obstacle2) {
         const ballRect = ball.getBoundingClientRect();
         const goalRect = goal.getBoundingClientRect();
-        return !(ballRect.right < obstacleRect.left || 
-                 ballRect.left > obstacleRect.right || 
-                 ballRect.bottom < obstacleRect.top || 
-                 ballRect.top > obstacleRect.bottom);
+        return !(ballRect.right < obstacl2eRect.left || 
+                 ballRect.left > obstacle2Rect.right || 
+                 ballRect.bottom < obstacle2Rect.top || 
+                 ballRect.top > obstacle2Rect.bottom);
     }
 });
     function checkCollision(ball, obstacle3) {
         const ballRect = ball.getBoundingClientRect();
         const goalRect = goal.getBoundingClientRect();
-        return !(ballRect.right < obstacleRect.left || 
-                 ballRect.left > obstacleRect.right || 
-                 ballRect.bottom < obstacleRect.top || 
-                 ballRect.top > obstacleRect.bottom);
+        return !(ballRect.right < obstacle3Rect.left || 
+                 ballRect.left > obstacle3Rect.right || 
+                 ballRect.bottom < obstacle3Rect.top || 
+                 ballRect.top > obstacle3Rect.bottom);
     }
 });
