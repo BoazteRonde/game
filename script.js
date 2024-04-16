@@ -53,7 +53,7 @@ const ballStyle = getComputedStyle(ball);
                  ballRect.top > obstacleRect.bottom);
     }
 });
- function checkCollision(ball, obstacle2) {
+    function checkCollision(ball, obstacle2) {
         const ballRect = ball.getBoundingClientRect();
         const goalRect = goal.getBoundingClientRect();
         return !(ballRect.right < obstacleRect.left || 
@@ -62,7 +62,7 @@ const ballStyle = getComputedStyle(ball);
                  ballRect.top > obstacleRect.bottom);
     }
 });
- function checkCollision(ball, obstacle3) {
+    function checkCollision(ball, obstacle3) {
         const ballRect = ball.getBoundingClientRect();
         const goalRect = goal.getBoundingClientRect();
         return !(ballRect.right < obstacleRect.left || 
