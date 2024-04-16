@@ -44,7 +44,25 @@ const ballStyle = getComputedStyle(ball);
                  ballRect.top > goalRect.bottom);
     }
 });
-    function checkCollision(ball, obstacle) {
+    function checkCollision(ball, obstacle1) {
+        const ballRect = ball.getBoundingClientRect();
+        const goalRect = goal.getBoundingClientRect();
+        return !(ballRect.right < obstacleRect.left || 
+                 ballRect.left > obstacleRect.right || 
+                 ballRect.bottom < obstacleRect.top || 
+                 ballRect.top > obstacleRect.bottom);
+    }
+});
+ function checkCollision(ball, obstacle2) {
+        const ballRect = ball.getBoundingClientRect();
+        const goalRect = goal.getBoundingClientRect();
+        return !(ballRect.right < obstacleRect.left || 
+                 ballRect.left > obstacleRect.right || 
+                 ballRect.bottom < obstacleRect.top || 
+                 ballRect.top > obstacleRect.bottom);
+    }
+});
+ function checkCollision(ball, obstacle3) {
         const ballRect = ball.getBoundingClientRect();
         const goalRect = goal.getBoundingClientRect();
         return !(ballRect.right < obstacleRect.left || 
