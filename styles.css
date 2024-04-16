@@ -28,3 +28,10 @@ body, html {
     top: 80%;
     left: 80%;
 }
+#obstacle {
+    width: 70px;
+    height: 70px;
+    background-color: blue;
+    position: absolute;
+    top: 30%;
+    left: 80%;
