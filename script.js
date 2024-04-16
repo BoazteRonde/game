@@ -12,16 +12,16 @@ const ballStyle = getComputedStyle(ball);
 
         switch (key) {
             case 'ArrowUp':
-                ball.style.top = (ballTop - 10) + 'px';
+                ball.style.top = (ballTop - 5) + 'px';
                 break;
             case 'ArrowDown':
-                ball.style.top = (ballTop + 10) + 'px';
+                ball.style.top = (ballTop + 5) + 'px';
                 break;
             case 'ArrowLeft':
-                ball.style.left = (ballLeft - 10) + 'px';
+                ball.style.left = (ballLeft - 5) + 'px';
                 break;
             case 'ArrowRight':
-                ball.style.left = (ballLeft + 10) + 'px';
+                ball.style.left = (ballLeft + 5) + 'px';
                 break;
         }
 // Controleer winvoorwaarde
