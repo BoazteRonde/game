@@ -44,3 +44,12 @@ const ballStyle = getComputedStyle(ball);
                  ballRect.top > goalRect.bottom);
     }
 });
+    function checkCollision(ball, obstacle) {
+        const ballRect = ball.getBoundingClientRect();
+        const goalRect = goal.getBoundingClientRect();
+        return !(ballRect.right < obstacleRect.left || 
+                 ballRect.left > obstacleRect.right || 
+                 ballRect.bottom < obstacleRect.top || 
+                 ballRect.top > obstacleRect.bottom);
+    }
+});
